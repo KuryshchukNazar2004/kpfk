@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Londrina+Outline&family=Raleway&family=Ubuntu:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+}
+.header_title{
+    width: 60%;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+}
+.header_logo{
+    width: 260px;
+}
+.nav{
+    margin-top: 50px;
+    background: #D4E803;
+    border: 3px solid black;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+.nav ul li{
+    padding: 10px;
+    font-size: 25px;
+    list-style: none;
+    font-style: bold;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 43px;
+}
+.nav ul li:hover{
+    border-bottom: 2px solid black;
+    transition: .1s ease-in-out;
+}
+.nav .active{
+    border-bottom: 2px solid black;
+}
+/* ------ABOUT------- */
+.about{
+    padding: 70px 50px;
+}
+.about_title{
+    margin-bottom: 50px;
+}
+.about_collage_text{
+    background: rgba(241, 240, 222, 0.01);
+    box-shadow: inset 0px 1px 18px #B1B0A0, inset 0px 1px 40px rgba(49, 49, 195, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    padding: 80px 75px;
+}
+.collage_desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #F0F0D8;
+    box-shadow: inset 0px 1px 18px rgba(212, 232, 3, 0.3), inset 0px 1px 40px rgba(227, 222, 239, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+}
+.kpfk_image{
+    width: 500px;
+    height: 325px;
+    border-radius: 25px;
+}
+.collage_desc p{
+    font-size: 20px;
+    line-height: 43px;
+}
+.history_title{
+    font-size: 40px;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.history p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+/* -------SPECIALTY-------- */
+.specialty{
+    /* padding: 40px; */
+    padding: 0 50px;
+}
+.specialty_title{
+    padding: 70px 0;
+    font-size: 50px;
+}
+.specialty_blocks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 20px;
+}
+.block{
+    width: 330px;
+    background: rgba(241, 240, 222, 1);
+    height: 680px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    position: relative;
+}
+.img_block{
+    width: 330px;
+    height: 240px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.block_content_text h3{
+    font-size: 27px;
+    margin: 20px;
+    line-height: 35px;
+    height: 120px;
+}
+.block_content_text p{
+    font-size: 22px;
+    margin: 15px;
+    line-height: 23px;
+    height: 135px;
+}
+.more{
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.more p{
+    font-size: 29px;
+    line-height: 43px;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 25px;
+    font-size: 27px;
+    width: 120px;
+    margin:15px auto;
+    z-index: 100;
+    top: 600px;
+    left: 105px;
+    font-weight: 900;
+    line-height: 43px;
+    position: absolute;
+}
+.bg-blur{
+    position: absolute;
+    background: #D4E803;
+    filter: blur(18.5px);
+    width: 120px;
+    height: 40px;
+    top: 620px;
+    left: 105px;
+    z-index: 2;
+}
+/* -------STUDENTS-------- */
+.students{
+    background: #F1F0DE;
+    padding-bottom: 100px;
+}
+.students_content_title{
+    padding: 50px;
+
+}
+.virtual_link{
+    background: #FFFFFF;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-left: 50px;
+    padding: 20px 0;
+    width: 650px;
+}
+.virtual_link:hover{
+    transform: translateY(-5%);
+    transition: .1s ease-in;
+}
+.virtual_link a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    font-size: 31px;
+}
+.kpfk_link_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+.shedule{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.shedule_full_img{
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+    width: 600px;
+}
+.shedule_img{
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+    width: 445px;
+}
+/* ------------------- */
+/* -----CONTACT------- */
+.contact_title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 35px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.logo_kpfk{
+    width: 500px;
+}
+.contact_desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_desc ul li{
+    display: flex;
+    margin:100px 0;
+}
+.contact_icon{
+
+}
+.contact_desc ul li p{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 35px;
+    margin-left: 20px;
+}
+/* ------------------- */
+[data-tab-content]{
+    display: none;
+  }
+  .active[data-tab-content]{
+    display: block;
+  }
