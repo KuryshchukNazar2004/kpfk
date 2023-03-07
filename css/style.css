@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 .header_container{
     display: flex;
     flex-wrap: wrap;
@@ -259,3 +263,18 @@
   .active[data-tab-content]{
     display: block;
   }
+
+ #scrollTop{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    font-size: 40px;
+    z-index: 999;
+}
+.isShowBtn{
+    opacity: 1;
+    transition: .4s;
+}
+.hide{
+    opacity: 0;
+}

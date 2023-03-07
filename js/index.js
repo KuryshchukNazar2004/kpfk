@@ -14,3 +14,18 @@ tabs.forEach(tab => {
         target.classList.add('active')
     })
 })
+
+window.onload = () => {
+    const scrollBtn = document.querySelector('.isShowBtn')
+    window.onscroll = () =>{
+        if(window.scrollY > 400){
+            scrollBtn.classList.remove('hide')
+        }else if(window.scrollY < 400){
+            scrollBtn.classList.add('hide')
+        }
+    };
+
+    scrollBtn.onclick = () =>{
+        window.scrollTo(0,0);
+    };
+};
